@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
@@ -6,7 +5,7 @@ import './App.css';
 class App extends Component {
     constructor(props){
         super(props)
-        this.state ={ name: ''};
+        this.state = { name: ''};
         this.state = { surname: ''};
     }
 
@@ -28,8 +27,8 @@ class App extends Component {
                                 value={this.state.name}
                                 onChange={this.handleName}/></p>
                 <p>Surname: <input type="text" name="surname"
-                                value={this.state.surname}
-                                onChange={this.handleSurname}/></p>
+                                   value={this.state.surname}
+                                   onChange={this.handleSurname}/></p>
                 <Foo name={this.state.name} surname={this.state.surname}/>
 
             </div>
