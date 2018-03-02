@@ -19,8 +19,8 @@ class Sheet extends Component {
         this.state = {value: this.props.start}
     }
 
-    handleChange(event){
-        let v = parseInt(event.target.value)
+    handleChange = (event) => {
+        let v = event.target.value
         this.setState({value: v})
     }
 
